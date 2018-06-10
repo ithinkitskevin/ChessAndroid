@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity"
+    android:layout_centerHorizontal="true"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/arvo"
+        android:padding="30dp"
+        android:text="Chess Game"
+        android:textSize="50sp" />
+
+
+    <LinearLayout
+        android:id="@+id/horBar2"
+        android:orientation="horizontal"
+        android:paddingTop="25dp"
+        android:paddingBottom="2dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title">
+
+        <Button
+            android:background="@drawable/button_selector"
+            android:id="@+id/gameStart"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/arvo"
+            android:text="Play"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/listGame"
+            android:background="@drawable/button_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/gameStart"
+            android:layout_weight="1"
+            android:fontFamily="@font/arvo"
+            android:text="History"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingTop="25dp"
+        android:paddingBottom="2dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horBar2"
+        >
+
+
+        <Button
+            android:id="@+id/quit"
+            android:background="@drawable/button_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/arvo"
+            android:text="Quit"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context=".ReplayActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/arvo"
+            android:text="Prev"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/pick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/arvo"
+            android:text="Choose Game"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/arvo"
+            android:text="Next"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/messageReplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/arvo"
+            android:text="Default Message"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/toMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/arvo"
+            android:text="Menu"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/gridviewReplay"
+        android:layout_width="match_parent"
+        android:layout_height="426dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:numColumns="8"
+        android:padding="2dp"
+        android:stretchMode="columnWidth">
+    </GridView>
+
+</LinearLayout>
