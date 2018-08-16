@@ -17,5 +17,5 @@ Developed through Android Studio with Java
 * Undo
 * Save Current Game
 * Tracks Previous Games
-** Play the Previous Games
+* Play the Previous Games
 
